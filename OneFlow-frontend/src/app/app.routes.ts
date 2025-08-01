@@ -10,5 +10,9 @@ export const routes: Routes = [
     path: 'dashboard', 
     loadComponent: () => import('./components/dashboard/dashboard.component').then(m => m.DashboardComponent)
   },
+  { 
+    path: 'test', 
+    loadComponent: () => import('./components/test-tailwind.component').then(m => m.TestTailwindComponent)
+  },
   { path: '**', redirectTo: '/dashboard' }
 ];
