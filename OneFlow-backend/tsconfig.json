@@ -1,7 +1,18 @@
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
+    "outDir": "./build",
+    "rootDir": "./",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "paths": {
       "#controllers/*": ["./app/controllers/*"],
       "#exceptions/*": ["./app/exceptions/*"],
@@ -12,7 +23,7 @@
       "#events/*": ["./app/events/*"],
       "#middleware/*": ["./app/middleware/*"],
       "#validators/*": ["./app/validators/*"],
-      "#providers/*": ["./providers/*"],
+      "#providers/*": ["./app/providers/*"],
       "#policies/*": ["./app/policies/*"],
       "#abilities/*": ["./app/abilities/*"],
       "#database/*": ["./database/*"],
@@ -20,5 +31,12 @@
       "#start/*": ["./start/*"],
       "#config/*": ["./config/*"]
     }
-  }
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }

@@ -15,7 +15,7 @@ export default class AuthMiddleware {
     ctx: HttpContext,
     next: NextFn,
     options: {
-      guards?: (keyof Authenticators)[]
+      guards?: string[]
     } = {}
   ) {
     /**

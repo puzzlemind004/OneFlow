@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+/*
+|--------------------------------------------------------------------------
+| Ace CLI
+|--------------------------------------------------------------------------
+|
+| The "ace" file is the entrypoint for running ace commands. Ace is a
+| command line interface for AdonisJS applications.
+|
+*/
+
+import('./bin/console.ts')
