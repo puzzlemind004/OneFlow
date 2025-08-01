@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussion
+    url: https://github.com/qcharrier/oneflow-saas/discussions
+    about: Pour des questions générales ou discussions sur les fonctionnalités
